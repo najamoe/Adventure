@@ -1,10 +1,9 @@
 public class Adventure {
-    private Map map = new Map();
+    private Map map;
     private player player;
-    private Room currentRoom;
 
     public Adventure(){
-    map.createMap();
+    map = new Map();
     player = new player();
     player.setCurrentRoom(map.getStarterRoom());
     }
@@ -13,13 +12,18 @@ public class Adventure {
         return player.getCurrentRoom();
     }
 
-    //Direction
-    public boolean go(String direction) {
-        return player.move(direction);
+    public boolean goNorth(){
+        return player.goNorth();
+    }
+    public boolean goSouth(){
+        return player.goSouth();
+    }
+    public boolean goEast(){
+        return player.goEast();
+    }
+    public boolean goWest(){
+        return player.goWest();
     }
 
-    public String toString(){
-        return getCurrentRoom().getRoomName() + getCurrentRoom().getRoomDescription();
-    }
 }
 

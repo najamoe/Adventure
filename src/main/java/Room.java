@@ -35,6 +35,14 @@ public class Room {
 
 
     //Setters
+    public void setRoomname(String roomname){
+        this.roomname = roomname;
+    }
+
+    public void setDescription(String description){
+        this.description = description;
+    }
+
     public void setNorth(Room north) {
         this.north = north;
     }

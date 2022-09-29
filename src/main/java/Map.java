@@ -15,9 +15,13 @@ public class Map {
 
         room1.setEast(room2);
         room1.setSouth(room4);
+        room1.setNorth(null);
+        room1.setWest(null);
 
         room2.setEast(room3);
         room2.setWest(room1);
+        room2.setNorth(null);
+        room2.setSouth(null);
 
         room3.setSouth(room6);
         room3.setWest(room3);
@@ -42,10 +46,11 @@ public class Map {
 
         starterRoom = room1;
     }
-
-    public Room getStarterRoom() {
+    public Room getStarterRoom(){
         return starterRoom;
     }
+
+
 
 }
 
