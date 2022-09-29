@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ec896a0-933a-41f8-84aa-c82e5355055a" name="Changes" comment="1st commit, brainfog executed :D">
+    <list default="true" id="2ec896a0-933a-41f8-84aa-c82e5355055a" name="Changes" comment="part 1, missing opp. to move around in rooms">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Adventure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Adventure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Adventure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Adventure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UserInterface.java" beforeDir="false" />
     </list>
-    <list id="5589e1fd-af17-4a8f-960d-941ff3c4e827" name="Changes by jeppe" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UserInterface.java" afterDir="false" />
-    </list>
+    <list id="5589e1fd-af17-4a8f-960d-941ff3c4e827" name="Changes by jeppe" comment="Changes by jeppe" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,26 +29,23 @@
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/main" />
+  </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/Adventure.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/Room.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/UserInterface.java" root0="SKIP_INSPECTION" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/org/example/UserInterface.java">
-      <ranges>
-        <range start1="2" end1="2" start2="2" end2="3" changelist="2ec896a0-933a-41f8-84aa-c82e5355055a" />
-        <range start1="5" end1="6" start2="6" end2="9" changelist="2ec896a0-933a-41f8-84aa-c82e5355055a" />
-        <range start1="10" end1="12" start2="13" end2="15" changelist="2ec896a0-933a-41f8-84aa-c82e5355055a" />
-        <range start1="30" end1="30" start2="33" end2="34" changelist="5589e1fd-af17-4a8f-960d-941ff3c4e827" />
-        <range start1="31" end1="31" start2="35" end2="36" changelist="2ec896a0-933a-41f8-84aa-c82e5355055a" />
-        <range start1="32" end1="35" start2="37" end2="64" changelist="2ec896a0-933a-41f8-84aa-c82e5355055a" />
-        <range start1="36" end1="40" start2="65" end2="69" changelist="2ec896a0-933a-41f8-84aa-c82e5355055a" />
-      </ranges>
-    </file>
+    <setting file="file://$PROJECT_DIR$/src/main/java/Adventure.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/Map.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/Room.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/UserInterface.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -56,21 +56,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/naja_/OneDrive - Københavns Erhvervsakademi/KEA/intelliJ/IdeaProjects/Adventure1/src/main/java/org/example/Map.java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Adventure" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Adventure1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -85,7 +92,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664197416615</updated>
-      <workItem from="1664197418037" duration="19786000" />
+      <workItem from="1664197418037" duration="37837000" />
+      <workItem from="1664433621125" duration="2213000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit, brainfog executed :D">
       <created>1664223453188</created>
@@ -94,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664223453188</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2nd commit, rooms created">
+      <created>1664348543603</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664348543603</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +128,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1st commit, brainfog executed :D" />
-    <option name="LAST_COMMIT_MESSAGE" value="1st commit, brainfog executed :D" />
+    <MESSAGE value="2nd commit, rooms created" />
+    <MESSAGE value="3rd commit, gitignore" />
+    <MESSAGE value="part 1, missing opp. to move around in rooms" />
+    <MESSAGE value="Changes by jeppe" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by jeppe" />
   </component>
 </project>
