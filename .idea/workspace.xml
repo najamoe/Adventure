@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ec896a0-933a-41f8-84aa-c82e5355055a" name="Changes" comment="finished UI part 2">
+    <list default="true" id="2ec896a0-933a-41f8-84aa-c82e5355055a" name="Changes" comment="started adding items">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Adventure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Adventure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/player.java" afterDir="false" />
     </list>
@@ -145,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664794204585</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="started adding items">
+      <created>1664799439458</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664799439458</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +177,7 @@
     <MESSAGE value="3rd commit - created player room and so on, bug with moving player around in userinterFace." />
     <MESSAGE value="4th commit, part 2 ongoing" />
     <MESSAGE value="finished UI part 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished UI part 2" />
+    <MESSAGE value="started adding items" />
+    <option name="LAST_COMMIT_MESSAGE" value="started adding items" />
   </component>
 </project>

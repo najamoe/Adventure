@@ -52,12 +52,14 @@ public class UserInterface {
                         System.out.println("you can't go that way");
                     }
                     break;
-                case "Look":
+                case "look", "Look":
+                    System.out.println();
                     System.out.println(adventure.getCurrentRoom().getRoomName() + " " + adventure.getCurrentRoom().getRoomDescription());
-                    System.out.println(adventure.getCurrentRoom().items);
+                    System.out.println(adventure.getPlayer().getCurrentRoom().items);
                     break;
                 case "inventory", "inv":
                     System.out.println("This is your inventory: "); //create inventory
+                    System.out.println(adventure.getPlayer().getInventory());
                     break;
                 case "take":
                     System.out.println("you picked up "); //TODO indsæt itemnavn
@@ -74,8 +76,9 @@ public class UserInterface {
                 case "Exit", "quit":
                     System.out.println("Exiting game"); //kan man lave en "are you sure(yes/no)"?
                     break;
+
                 default:
-                    System.out.println("dont get it");
+                    System.out.println("I don't understand, try again");
                     break;
             }
         }

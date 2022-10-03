@@ -1,14 +1,12 @@
+import com.sun.source.tree.BreakTree;
+
 import java.util.ArrayList;
 
 public class player {
 
+    ArrayList<Item> inventory = new ArrayList<>();
+
     private Room currentRoom;
-    ArrayList<String> inventory = new ArrayList<>();
-
-    public ArrayList<String> getInventory(){
-        return inventory;
-
-    }
 
     public Room getCurrentRoom() {
         return currentRoom;
@@ -47,6 +45,13 @@ public class player {
             currentRoom = currentRoom.getWest();
             return true;
         }
+    }
+    public void addItem(Item item){
+        inventory.add(item);
+    }
+
+    public  ArrayList<Item> getInventory(){
+        return inventory;
     }
 
 
