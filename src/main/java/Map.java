@@ -1,3 +1,5 @@
+import java.util.concurrent.ForkJoinTask;
+
 public class Map {
 
     private Room starterRoom;
@@ -5,27 +7,26 @@ public class Map {
     public Map(){
         setRooms();
     }
-        Room DesertedRoad = new Room("deserted road",
-                //description
-                "this is a deserted road",
-                //Item
-                "item");
-        Room DarkForest = new Room("Dark forest",
-                //description
-                "description",
-                //Item
-                "item");
-        Room Church = new Room("church", "descriptionn", "cross");
-        Room Cemetery = new Room("cemetery ", "description", "item");
-        Room SecretBasement = new Room("Secret Basement", "description", "item");
-        Room AbandonedSchool = new Room("abandoned school", "description", "item");
-        Room PublicPool = new Room("public pool", "description", "item");
-        Room SchoolGym = new Room("School gym", "description", "item");
-        Room Playground = new Room("playground", "description", "item");
+        Room DesertedRoad = new Room("deserted road", "this is a deserted road");
+        Room DarkForest = new Room("Dark forest", "description");
+        Room Church = new Room("church", "descriptionn");
+        Room Cemetery = new Room("cemetery ", "description");
+        Room SecretBasement = new Room("Secret Basement", "description");
+        Room AbandonedSchool = new Room("abandoned school", "description");
+        Room PublicPool = new Room("public pool", "description");
+        Room SchoolGym = new Room("School gym", "description");
+        Room Playground = new Room("playground", "description");
 
+        //Items
+        Item cross = new Item("Cross", "maybe it can keep away the deamons");
+        Item flashlight = new Item("Flashlight", "description of flashlight");
+        Item hammer = new Item("hammer", "used to smashed things");
+        Item joint = new Item("Joint", "keep calm");
         public void setRooms() {
         DesertedRoad.setEast(DarkForest);
         DesertedRoad.setSouth(Cemetery);
+        DesertedRoad.addItem(cross);
+        DesertedRoad.addItem(flashlight);
 
         DarkForest.setEast(Church);
         DarkForest.setWest(DesertedRoad);
@@ -43,6 +44,7 @@ public class Map {
 
         PublicPool.setNorth(Cemetery);
         PublicPool.setEast(SchoolGym);
+        PublicPool.addItem(joint);
 
         SchoolGym.setNorth(SecretBasement);
         SchoolGym.setEast(Playground);
@@ -57,6 +59,8 @@ public class Map {
     public Room getStarterRoom() {
         return DesertedRoad;
     }
+
+    //insert items
 
 
 }

@@ -1,7 +1,4 @@
 import java.util.ArrayList;
-
-//Room har fire attributter af typen Room til at håndtere forbindelser til de fire andre rum: north, east, south og west.
-// Hvis der ikke er noget rum i den pågældende retning, har attributten værdien null.
 public class Room {
     private String roomname;
     private String description;
@@ -12,40 +9,47 @@ public class Room {
 
     ArrayList<Item> items = new ArrayList<>();
 
+    public void addItem(Item Items) {
+        items.add(Items);
+    }
 
-    public Room(String roomname, String description, String item) {
+    public Room(String roomname, String description) {
         this.roomname = roomname;
         this.description = description;
         this.north = this.south = this.east = this.west = null;
     }
 
     //Getters
-   public String getRoomName(){
+    public String getRoomName() {
         return roomname;
-   }
+    }
 
     public String getRoomDescription() {
         return description;
     }
+
     public Room getNorth() {
         return north;
     }
+
     public Room getSouth() {
         return south;
-    } public Room getEast() {
+    }
+
+    public Room getEast() {
         return east;
     }
+
     public Room getWest() {
         return west;
     }
 
-
     //Setters
-    public void setRoomname(String roomname){
+    public void setRoomname(String roomname) {
         this.roomname = roomname;
     }
 
-    public void setDescription(String description){
+    public void setDescription(String description) {
         this.description = description;
     }
 
@@ -64,8 +68,5 @@ public class Room {
     public void setWest(Room west) {
         this.west = west;
     }
-    //items
-    public void addItem(String item){
-        Item items = new Item(item);
-    }
+
 }

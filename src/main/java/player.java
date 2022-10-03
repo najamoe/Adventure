@@ -3,8 +3,12 @@ import java.util.ArrayList;
 public class player {
 
     private Room currentRoom;
-
     ArrayList<String> inventory = new ArrayList<>();
+
+    public ArrayList<String> getInventory(){
+        return inventory;
+
+    }
 
     public Room getCurrentRoom() {
         return currentRoom;
@@ -44,4 +48,6 @@ public class player {
             return true;
         }
     }
+
+
 }

@@ -19,8 +19,7 @@ public class UserInterface {
 
                 case "north", "go north":
                     if (adventure.goNorth()) {
-                        System.out.println("you went north");
-                        System.out.println("Going north ");
+                        System.out.println("you went north and are now ");
                         System.out.println(adventure.getCurrentRoom().getRoomName() + adventure.getCurrentRoom().getRoomDescription());
                     } else {
                         System.out.println("no way");
@@ -59,11 +58,12 @@ public class UserInterface {
                     break;
                 case "inventory", "inv":
                     System.out.println("This is your inventory: "); //create inventory
+                    break;
                 case "take":
-                    System.out.println("you picked up " + Item.getItem());
+                    System.out.println("you picked up "); //TODO indsæt itemnavn
                     break;
                 case "drop":
-                    System.out.println("you dropped your " + Item.getItem());
+                    System.out.println("you dropped your "); //TODO indsæt itemnavn
                 case "Help":
                     System.out.println("""
                             check the following commandlines for help:
