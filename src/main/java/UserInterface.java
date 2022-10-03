@@ -56,11 +56,14 @@ public class UserInterface {
                 case "Look":
                     System.out.println(adventure.getCurrentRoom().getRoomName() + " " + adventure.getCurrentRoom().getRoomDescription());
                     System.out.println(adventure.getCurrentRoom().items);
-
                     break;
+                case "inventory", "inv":
+                    System.out.println("This is your inventory: "); //create inventory
                 case "take":
                     System.out.println("you picked up " + Item.getItem());
                     break;
+                case "drop":
+                    System.out.println("you dropped your " + Item.getItem());
                 case "Help":
                     System.out.println("""
                             check the following commandlines for help:

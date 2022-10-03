@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ec896a0-933a-41f8-84aa-c82e5355055a" name="Changes" comment="3rd commit - created player room and so on, bug with moving player around in userinterFace.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Item.java" afterDir="false" />
+    <list default="true" id="2ec896a0-933a-41f8-84aa-c82e5355055a" name="Changes" comment="4th commit, part 2 ongoing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Adventure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Adventure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664440942705</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="4th commit, part 2 ongoing">
+      <created>1664794022703</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664794022703</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +158,7 @@
     <MESSAGE value="Changes by jeppe" />
     <MESSAGE value="part 1, missing opp. to move around in rooms" />
     <MESSAGE value="3rd commit - created player room and so on, bug with moving player around in userinterFace." />
-    <option name="LAST_COMMIT_MESSAGE" value="3rd commit - created player room and so on, bug with moving player around in userinterFace." />
+    <MESSAGE value="4th commit, part 2 ongoing" />
+    <option name="LAST_COMMIT_MESSAGE" value="4th commit, part 2 ongoing" />
   </component>
 </project>
