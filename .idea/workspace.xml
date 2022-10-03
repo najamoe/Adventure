@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ec896a0-933a-41f8-84aa-c82e5355055a" name="Changes" comment="part 1, missing opp. to move around in rooms">
+    <list default="true" id="2ec896a0-933a-41f8-84aa-c82e5355055a" name="Changes" comment="3rd commit - created player room and so on, bug with moving player around in userinterFace.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Adventure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Adventure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
@@ -13,7 +14,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/player.java" afterDir="false" />
     </list>
-    <list id="5589e1fd-af17-4a8f-960d-941ff3c4e827" name="Changes by jeppe" comment="Changes by jeppe" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +43,7 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/Map.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/Room.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/UserInterface.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/player.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -80,6 +81,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -90,7 +102,8 @@
       <option name="presentableId" value="Default" />
       <updated>1664197416615</updated>
       <workItem from="1664197418037" duration="37837000" />
-      <workItem from="1664433621125" duration="5586000" />
+      <workItem from="1664433621125" duration="11572000" />
+      <workItem from="1664526170242" duration="2305000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit, brainfog executed :D">
       <created>1664223453188</created>
@@ -113,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664436313217</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="3rd commit - created player room and so on, bug with moving player around in userinterFace.">
+      <created>1664440942705</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664440942705</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +156,7 @@
     <MESSAGE value="3rd commit, gitignore" />
     <MESSAGE value="Changes by jeppe" />
     <MESSAGE value="part 1, missing opp. to move around in rooms" />
-    <option name="LAST_COMMIT_MESSAGE" value="part 1, missing opp. to move around in rooms" />
+    <MESSAGE value="3rd commit - created player room and so on, bug with moving player around in userinterFace." />
+    <option name="LAST_COMMIT_MESSAGE" value="3rd commit - created player room and so on, bug with moving player around in userinterFace." />
   </component>
 </project>

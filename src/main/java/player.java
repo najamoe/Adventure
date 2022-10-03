@@ -1,24 +1,25 @@
+import java.util.ArrayList;
+
 public class player {
 
     private Room currentRoom;
 
+    ArrayList<String> inventory = new ArrayList<>();
+
     public Room getCurrentRoom() {
         return currentRoom;
     }
-
     public void setCurrentRoom(Room currentRoom) {
         this.currentRoom = currentRoom;
     }
-
     public boolean goNorth() {
-        if (currentRoom.getNorth() == null ) {
+        if (currentRoom.getNorth() == null) {
             return false;
         } else {
             currentRoom = currentRoom.getNorth();
             return true;
         }
     }
-
     public boolean goSouth() {
         if (currentRoom.getSouth() == null) {
             return false;
@@ -27,7 +28,6 @@ public class player {
             return true;
         }
     }
-
     public boolean goEast() {
         if (currentRoom.getEast() == null) {
             return false;
@@ -36,7 +36,6 @@ public class player {
             return true;
         }
     }
-
     public boolean goWest() {
         if (currentRoom.getWest() == null) {
             return false;

@@ -11,7 +11,6 @@ public class Adventure {
     public Room getCurrentRoom() {
         return player.getCurrentRoom();
     }
-
     public boolean goNorth(){
         return player.goNorth();
     }
