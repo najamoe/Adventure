@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ec896a0-933a-41f8-84aa-c82e5355055a" name="Changes" comment="started adding items">
+    <list default="true" id="2ec896a0-933a-41f8-84aa-c82e5355055a" name="Changes" comment="Part 2 - items being printed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Adventure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Adventure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/player.java" afterDir="false" />
+    </list>
+    <list id="bb8af1cc-adec-48da-82b4-3f764ca7359c" name="Changes by jeppe" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +47,18 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/UserInterface.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/player.java" root0="SKIP_INSPECTION" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/Map.java">
+      <ranges>
+        <range start1="0" end1="0" start2="0" end2="1" changelist="bb8af1cc-adec-48da-82b4-3f764ca7359c" />
+        <range start1="10" end1="19" start2="11" end2="33" changelist="2ec896a0-933a-41f8-84aa-c82e5355055a" />
+        <range start1="21" end1="25" start2="35" end2="42" changelist="2ec896a0-933a-41f8-84aa-c82e5355055a" />
+        <range start1="36" end1="36" start2="53" end2="55" changelist="2ec896a0-933a-41f8-84aa-c82e5355055a" />
+        <range start1="39" end1="40" start2="58" end2="58" changelist="2ec896a0-933a-41f8-84aa-c82e5355055a" />
+        <range start1="53" end1="53" start2="71" end2="72" changelist="2ec896a0-933a-41f8-84aa-c82e5355055a" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -51,20 +68,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/naja_/OneDrive - Københavns Erhvervsakademi/KEA/intelliJ/IdeaProjects/Adventure1/src/main/java/org/example/Map.java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "last_opened_file_path": "C:/Users/naja_/OneDrive - Københavns Erhvervsakademi/KEA/intelliJ/IdeaProjects/Adventure1/src/main/java/org/example/Map.java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.editor"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -101,6 +119,8 @@
       <workItem from="1664197418037" duration="37837000" />
       <workItem from="1664433621125" duration="11572000" />
       <workItem from="1664526170242" duration="2305000" />
+      <workItem from="1665000976665" duration="422000" />
+      <workItem from="1665048306998" duration="5596000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit, brainfog executed :D">
       <created>1664223453188</created>
@@ -151,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664799439458</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Part 2 - items being printed">
+      <created>1664801102516</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664801102516</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +205,31 @@
     <MESSAGE value="4th commit, part 2 ongoing" />
     <MESSAGE value="finished UI part 2" />
     <MESSAGE value="started adding items" />
-    <option name="LAST_COMMIT_MESSAGE" value="started adding items" />
+    <MESSAGE value="Part 2 - items being printed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Part 2 - items being printed" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/Adventure.java</url>
+          <line>46</line>
+          <properties class="Adventure">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/player.java</url>
+          <line>57</line>
+          <properties class="player" method="goNorth">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

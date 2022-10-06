@@ -6,14 +6,11 @@ public class Item {
         this.itemName=itemName;
         this.itemDescription=itemDescription;
     }
-    public String getItem(){
+    public String getItemName(){
         return itemName;
     }
-    public String getItemDescription() {
-        return itemDescription;
-    }
 
-    public String toString(){//overriding the toString() method
+    public String toString(){
         return itemName + itemDescription;
     }
 }

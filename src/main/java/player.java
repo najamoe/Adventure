@@ -1,19 +1,60 @@
-import com.sun.source.tree.BreakTree;
-
 import java.util.ArrayList;
 
 public class player {
-
-    ArrayList<Item> inventory = new ArrayList<>();
-
     private Room currentRoom;
+    private ArrayList<Item> inventory = new ArrayList<>();
+
+
+    //Items
+    public ArrayList<Item> getInventory() {
+        return inventory;
+    }
+
+    //Take, add, remove and drop items
+    public Item addItem(Item item) {
+        inventory.add(item);
+        return item;
+    }
+    public Item takeItem(String itemName) {
+        Item takeItem = getCurrentRoom().removeItem(itemName);
+        addItem(takeItem);
+        return takeItem;
+    }
+
+    public Item dropItem(String itemName) {
+    Item dropItem = removeItem(itemName);
+    currentRoom.addItem(dropItem);
+    return dropItem;
+    }
+
+    public Item removeItem(String name) {
+        for (Item item : inventory) {
+            if (item.getItemName().equals(name)) {
+                inventory.remove(item);
+                return item;
+            }
+        }
+        return null;
+    }
+
+    public Item getItem(String name) {
+        for (Item item : inventory) {
+            if (item.getItemName().equals(name)) {
+                return item;
+            }
+        }
+        return null;
+    }
 
     public Room getCurrentRoom() {
         return currentRoom;
     }
+
     public void setCurrentRoom(Room currentRoom) {
         this.currentRoom = currentRoom;
     }
+
+    //Directions
     public boolean goNorth() {
         if (currentRoom.getNorth() == null) {
             return false;
@@ -22,6 +63,7 @@ public class player {
             return true;
         }
     }
+
     public boolean goSouth() {
         if (currentRoom.getSouth() == null) {
             return false;
@@ -30,6 +72,7 @@ public class player {
             return true;
         }
     }
+
     public boolean goEast() {
         if (currentRoom.getEast() == null) {
             return false;
@@ -38,6 +81,7 @@ public class player {
             return true;
         }
     }
+
     public boolean goWest() {
         if (currentRoom.getWest() == null) {
             return false;
@@ -45,13 +89,6 @@ public class player {
             currentRoom = currentRoom.getWest();
             return true;
         }
-    }
-    public void addItem(Item item){
-        inventory.add(item);
-    }
-
-    public  ArrayList<Item> getInventory(){
-        return inventory;
     }
 
 
