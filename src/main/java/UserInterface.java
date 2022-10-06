@@ -107,6 +107,10 @@ public class UserInterface {
                     }
                 }
 
+                case "health"-> {
+                    System.out.println("your health is " + adventure.getPlayer().getHealth());
+                }
+
                 case "Help", "help"-> {
                     System.out.println("""
                             check the following commandlines for help:

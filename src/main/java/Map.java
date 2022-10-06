@@ -39,6 +39,10 @@ public class Map {
     Item joint = new Item("joint", "");
     Item Barbell = new Item("There is a big barbell", "laying beside you, maybe it could be a weapon?");
 
+    //food
+    Food redbull = new Food("Redbull","makes you fly", 10);
+    Food rottenApple = new Food("rottenApple","possible worth eating",  -20);
+
 
     public void setRooms() {
         DesertedRoad.setEast(DarkForest);
@@ -69,9 +73,11 @@ public class Map {
         SchoolGym.setEast(Playground);
         SchoolGym.setWest(PublicPool);
         SchoolGym.addItem(Barbell);
+        SchoolGym.addItem(redbull);
 
         Playground.setNorth(AbandonedSchool);
         Playground.setWest(SchoolGym);
+        Playground.addItem(rottenApple);
 
         starterRoom = DesertedRoad;
     }

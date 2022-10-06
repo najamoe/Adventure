@@ -3,7 +3,20 @@ import java.util.ArrayList;
 public class player {
     private Room currentRoom;
     private ArrayList<Item> inventory = new ArrayList<>();
+    private int playerhealth;
 
+    public player(){
+        playerhealth=10;
+    }
+
+    // health
+    public int getHealth(){
+        return playerhealth;
+    }
+    public player setHealth(int health){
+        this.playerhealth=playerhealth;
+        return null;
+    }
 
     //Items
     public ArrayList<Item> getInventory() {
