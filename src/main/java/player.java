@@ -1,3 +1,5 @@
+import com.sun.source.tree.BreakTree;
+
 import java.util.ArrayList;
 
 public class player {
@@ -6,8 +8,22 @@ public class player {
     private int playerhealth;
 
     public player(){
-        playerhealth=10;
+        playerhealth=100;
     }
+
+    //Food
+    public enumerations eatFood(String itemName) {
+        Item playerInvent = searchInventory(itemName);
+        if (playerInvent == null) {
+            return enumerations.DOSENTEXIST;
+        } else if (playerInvent instanceof Food food) {
+            playerhealth += getHealth();
+            removeItem(itemName);
+            return enumerations.EATFOOD;
+        } else {
+            return enumerations.CANTEAT;
+    }}
+
 
     // health
     public int getHealth(){
@@ -21,6 +37,15 @@ public class player {
     //Items
     public ArrayList<Item> getInventory() {
         return inventory;
+    }
+
+    public Item searchInventory (String itemName){
+        for (Item item : inventory){
+            if (item.getItemName().equals(itemName)) {
+                return item;
+            }
+        }
+        return null;
     }
 
     //Take, add, remove and drop items

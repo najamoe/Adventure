@@ -12,21 +12,21 @@ public class UserInterface {
         game();
     }
 
-        public void welcome() {
-            System.out.println("Welcome to your haunted adventure"); //TODO ascii art
-            System.out.println("After a night of partying and having a blast with you baby sister you wake up,\n" +
-                    "alone, cold and surrounded by darkness. The last thing you remember, is trying a ouija board at the party.\n" +
-                    "Your sister is nowhere to be found, and your mission, should you chose to accept it, is to find her\n" +
-                    "Do you accept? (Yes/No)");
-            //TODO INSERT Yes/No option
-            // If yes, continue game, else quit game
-            System.out.println(adventure.getCurrentRoom().getRoomDescription());
+    public void welcome() {
+        System.out.println("Welcome to your haunted adventure"); //TODO ascii art
+        System.out.println("After a night of partying and having a blast with you baby sister you wake up,\n" +
+                "alone, cold and surrounded by darkness. The last thing you remember, is trying a ouija board at the party.\n" +
+                "Your sister is nowhere to be found, and your mission, should you chose to accept it, is to find her\n" +
+                "Do you accept? (Yes/No)");
+        //TODO INSERT Yes/No option
+        // If yes, continue game, else quit game
+        System.out.println(adventure.getCurrentRoom().getRoomDescription());
 
-            System.out.println("If at any point you need help, type help");
-            System.out.println("What do you wish to do from here ?");
-        }
+        System.out.println("If at any point you need help, type help");
+        System.out.println("What do you wish to do from here ?");
+    }
 
-        public void game(){
+    public void game() {
         boolean isRunning = true;
         while (isRunning) {
             input = UserInput.nextLine().toLowerCase();
@@ -34,13 +34,13 @@ public class UserInterface {
             String[] inputSplit = input.split(" ");
             String userInput = inputSplit[0];
 
-            if (inputSplit.length > 1){
+            if (inputSplit.length > 1) {
                 itemName = inputSplit[1];
             }
 
 
             switch (userInput) {
-                case "north", "go north", "North"-> {
+                case "north", "go north", "North" -> {
                     if (adventure.goNorth()) {
                         System.out.println("you went north and have entered the ");
                         System.out.println(adventure.getCurrentRoom().getRoomName() + adventure.getCurrentRoom().getRoomDescription());
@@ -49,7 +49,7 @@ public class UserInterface {
                     }
                 }
 
-                case "south", "go south", "South"-> {
+                case "south", "go south", "South" -> {
                     if (adventure.goSouth()) {
                         System.out.println("You went south and are now in the " + adventure.getCurrentRoom().getRoomName() + adventure.getCurrentRoom().getRoomDescription());
                     } else {
@@ -57,7 +57,7 @@ public class UserInterface {
                     }
                 }
 
-                case "East", "go east", "east"-> {
+                case "East", "go east", "east" -> {
                     if (adventure.goEast()) {
                         System.out.println("you went East and find yourself in the" + adventure.getCurrentRoom().getRoomName() + adventure.getCurrentRoom().getRoomDescription());
 
@@ -66,7 +66,7 @@ public class UserInterface {
                     }
                 }
 
-                case "West", "go west", "west"-> {
+                case "West", "go west", "west" -> {
                     if (adventure.goWest()) {
                         System.out.println("you went west");
                         System.out.println(adventure.getCurrentRoom().getRoomName() + adventure.getCurrentRoom().getRoomDescription());
@@ -76,29 +76,29 @@ public class UserInterface {
                     }
                 }
 
-                case "look", "Look"-> {
+                case "look", "Look" -> {
                     System.out.println(adventure.getPlayer().getCurrentRoom().itemsRoom);
                 }
 
-                case "inventory", "inv", "Inventory"-> {
-                    if (adventure.getPlayer().getInventory().isEmpty()){
+                case "inventory", "inv", "Inventory" -> {
+                    if (adventure.getPlayer().getInventory().isEmpty()) {
                         System.out.println("You do not have anything in your invenory, keep looking around and take items to fill your inventory");
-                    }else{
+                    } else {
                         System.out.println(adventure.getPlayer().getInventory());
                     }
                 }
 
-                case "take", "Take"-> {
+                case "take", "Take" -> {
                     //The item should be removed from itemArray and put in inventoryArray
                     Item itemTaken = adventure.takeItem(itemName);
-                    if (itemTaken == null){
+                    if (itemTaken == null) {
                         System.out.println("There is no item in the room of that name.");
                     } else {
                         System.out.println(itemTaken + "has been placed in your inventory");
                     }
                 }
 
-                case "drop", "Drop"-> {
+                case "drop", "Drop" -> {
                     Item dropItem = adventure.dropItem(itemName);
                     if (dropItem == null) {
                         System.out.println("you do not have that object in your inventory");
@@ -107,11 +107,24 @@ public class UserInterface {
                     }
                 }
 
-                case "health"-> {
+                case "eat", "Eat" -> {
+                    Item playerInvent = adventure.getPlayer().searchInventory(userInput);
+                   enumerations eatenItem = adventure.eatenItem(userInput);
+
+                    if (eatenItem == enumerations.EATFOOD) {
+                        System.out.println("You have eaten " + " " + itemName);
+                    } else if (eatenItem == enumerations.CANTEAT) {
+                        System.out.println("You cant eat that");
+                    } else if (eatenItem == enumerations.DOSENTEXIST);
+                    System.out.println("You don't have " + itemName);
+                }
+
+
+                case "health" -> {
                     System.out.println("your health is " + adventure.getPlayer().getHealth());
                 }
 
-                case "Help", "help"-> {
+                case "Help", "help" -> {
                     System.out.println("""
                             check the following commandlines for help:
                             To move around, type a direction (e.g go north, go south, go east, go west
@@ -119,13 +132,13 @@ public class UserInterface {
                             """);
                 }
 
-                case "Exit", "quit"-> {
+                case "Exit", "quit" -> {
                     System.out.println("Are you sure? yes/no");
                     //TODO insert YES/NO option
                     System.out.println("Exiting game");
                 }
 
-                default-> {
+                default -> {
                     System.out.println("I don't understand, try again");
                     break;
                 }

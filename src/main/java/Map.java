@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Scanner;
 import java.util.concurrent.ForkJoinTask;
 
 public class Map {
@@ -40,14 +42,16 @@ public class Map {
     Item Barbell = new Item("There is a big barbell", "laying beside you, maybe it could be a weapon?");
 
     //food
-    Food redbull = new Food("Redbull","makes you fly", 10);
+    Food redbull = new Food("Redbull","makes you fly", 60);
     Food rottenApple = new Food("rottenApple","possible worth eating",  -20);
-
+    Food waterbottle = new Food("waterbottle", "is it clean enough to drink", 20);
+    Food snickers = new Food("snickers ", "sugarboost ", 10);
 
     public void setRooms() {
         DesertedRoad.setEast(DarkForest);
         DesertedRoad.setSouth(Cemetery);
         DesertedRoad.addItem(flashlight);
+        DesertedRoad.addItem(snickers);
 
         DarkForest.setEast(Church);
         DarkForest.setWest(DesertedRoad);
@@ -56,6 +60,7 @@ public class Map {
         Church.setWest(Church);
         Church.addItem(cross);
         Church.addItem(key);
+        Church.addItem(waterbottle);
 
         Cemetery.setNorth(DesertedRoad);
         Cemetery.setSouth(PublicPool);

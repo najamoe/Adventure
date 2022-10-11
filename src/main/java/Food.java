@@ -1,14 +1,18 @@
 public class Food extends Item {
 
-    private int foodHealth;
+    private int healthStatus;
 
     public Food(String itemName, String itemDescription, int foodHealth){
         super(itemName, itemDescription);
-        this.foodHealth=foodHealth;
+        this.healthStatus=healthStatus;
     }
 
     public int getFoodhealth(){
-        return foodHealth;
+        return healthStatus;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + " " + healthStatus;
+    }
 }

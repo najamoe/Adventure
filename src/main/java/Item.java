@@ -10,7 +10,8 @@ public class Item {
         return itemName;
     }
 
-    public String toString(){
-        return itemName + itemDescription;
+    @Override
+    public String toString() {
+        return "item" + itemName + " " + itemDescription;
     }
 }

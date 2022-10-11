@@ -30,6 +30,11 @@ public class Adventure {
     public boolean goWest(){
         return player.goWest();
     }
+
+    //Food
+   public enumerations eatenItem(String itemName){
+        return player.eatFood(itemName);
+   }
     //Items
     public Item dropItem(String itemName) {
         return player.dropItem(itemName);
