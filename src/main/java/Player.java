@@ -1,46 +1,70 @@
-import com.sun.source.tree.BreakTree;
-
 import java.util.ArrayList;
 
-public class player {
+public class Player {
     private Room currentRoom;
     private ArrayList<Item> inventory = new ArrayList<>();
+    private ArrayList<Weapon> currentWeapon = new ArrayList<>();
     private int playerhealth;
 
-    public player(){
-        playerhealth=100;
+    public Player() {
+        playerhealth = 100;
     }
 
     //Food
-    public enumerations eatFood(String itemName) {
-        Item playerInvent = searchInventory(itemName);
-        if (playerInvent == null) {
-            return enumerations.DOSENTEXIST;
-        } else if (playerInvent instanceof Food food) {
-            playerhealth += getHealth();
-            removeItem(itemName);
-            return enumerations.EATFOOD;
+    public Enumerations eatFood(String itemName) {
+        Item playerinventory = searchInventory(itemName);
+        if (playerinventory != null) {
+            if (playerinventory instanceof Food food) {
+                int addedHealthPoints = food.getFoodhealth();
+                setHealth(addedHealthPoints);
+                removeItem(itemName);
+                return Enumerations.USABLE;
+            } else {
+                return Enumerations.CANTUSE;
+            }
         } else {
-            return enumerations.CANTEAT;
-    }}
+            return Enumerations.DOSENTEXIST;
+        }}
+    //Weapons
+    public ArrayList<Weapon> getCurrentWeapon() {
+        return currentWeapon;
+    }
 
+    public Enumerations equpItem(String itemName) {
+        Item playerinventory = searchInventory(itemName);
+        if (playerinventory != null) {
+            if (playerinventory instanceof Weapon weapon) {
+                removeItem(itemName);
+                currentWeapon.add(weapon);
+                return Enumerations.USABLE;
+            } else{
+                return Enumerations.CANTUSE;
+            }
+        } else{
+                return Enumerations.DOSENTEXIST;
+            }
+        }
 
     // health
-    public int getHealth(){
+    public int getHealth() {
         return playerhealth;
     }
-    public player setHealth(int health){
-        this.playerhealth=playerhealth;
-        return null;
+
+    public void setHealth(int health) {
+        this.playerhealth += health;
     }
 
     //Items
+    public String getShortName() {
+        return getShortName();
+    }
+
     public ArrayList<Item> getInventory() {
         return inventory;
     }
 
-    public Item searchInventory (String itemName){
-        for (Item item : inventory){
+    public Item searchInventory(String itemName) {
+        for (Item item : inventory) {
             if (item.getItemName().equals(itemName)) {
                 return item;
             }
@@ -53,6 +77,7 @@ public class player {
         inventory.add(item);
         return item;
     }
+
     public Item takeItem(String itemName) {
         Item takeItem = getCurrentRoom().removeItem(itemName);
         addItem(takeItem);
@@ -60,9 +85,9 @@ public class player {
     }
 
     public Item dropItem(String itemName) {
-    Item dropItem = removeItem(itemName);
-    currentRoom.addItem(dropItem);
-    return dropItem;
+        Item dropItem = removeItem(itemName);
+        currentRoom.addItem(dropItem);
+        return dropItem;
     }
 
     public Item removeItem(String name) {
@@ -84,6 +109,15 @@ public class player {
         return null;
     }
 
+    //Weapon
+    public Item getEquippedItem(String itemName) {
+        for (Item item : currentWeapon) {
+            if (item.getItemName().equals(itemName)) {
+                return item;
+            }
+        }
+        return null;
+    }
     public Room getCurrentRoom() {
         return currentRoom;
     }
